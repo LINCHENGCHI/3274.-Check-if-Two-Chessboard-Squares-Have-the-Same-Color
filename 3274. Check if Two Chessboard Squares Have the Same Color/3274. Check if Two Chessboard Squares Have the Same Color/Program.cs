@@ -6,8 +6,13 @@ namespace _3274._Check_if_Two_Chessboard_Squares_Have_the_Same_Color
     {
         static void Main(string[] args)
         {
-            string coordinates1 = "a1"; // 指定第一個棋盤格子座標
-            string coordinates2 = "b1"; // 指定第二個棋盤格子座標
+            Console.WriteLine("輸入座標1:");  //輸出輸入座標1提示
+            string coordinates1 = Console.ReadLine(); //使用者輸入座標1指定給字串資料型別coordinates1
+            
+            Console.WriteLine("輸入座標2:"); //輸出輸入座標2提示
+            string coordinates2 = Console.ReadLine(); //使用者輸入座標2指定給字串資料型別coordinates2
+
+            
             int t1 = coordinates1[0] - 'a' + 1; // 將第一個座標的字母部分轉換成數字
             int t2 = coordinates1[1] - '0'; // 將第一個座標的數字部分轉換成整數
             int t3 = coordinates2[0] - 'a' + 1; // 將第二個座標的字母部分轉換成數字
@@ -23,4 +28,5 @@ namespace _3274._Check_if_Two_Chessboard_Squares_Have_the_Same_Color
         }
     }
 }
+
 
